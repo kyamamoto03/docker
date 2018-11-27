@@ -1,4 +1,4 @@
-version: '3.1'
+version: '2'
  
 services:
  
@@ -15,4 +15,4 @@ services:
     build: ./MongoTest/.
     image: mongotest
     ports:
-      - 81:80
+      - 80:80
