@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  proxy:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d
+  web:
+    image: kyamamoto03/httpd:latest
+    ports:
+      - "85:80"
+      
