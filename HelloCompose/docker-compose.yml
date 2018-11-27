@@ -10,5 +10,5 @@ services:
   web:
     image: kyamamoto03/httpd:latest
     ports:
-      - "85:80"
+      - "80:80"
       
