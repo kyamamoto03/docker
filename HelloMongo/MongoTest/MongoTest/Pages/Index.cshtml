@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="row">
+    <div class="col-md-6">TodoId</div>
+    <div class="col-md-6">TodoName</div>
+    <div class="row">
+        @foreach (var t in Model.Todos)
+        {
+            <div class="col-md-6">@t.TodoId</div>
+            <div class="col-md-6">@t.TodoName</div>
+        }
+    </div>
+</div>
